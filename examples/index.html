@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi Riyal Symbol – Usage Examples</title>
+    <style>
+        /* ── Load the font from the repo's font-files folder ── */
+        @font-face {
+            font-family: 'SaudiRiyal';
+            src: url('../dist/saudiriyalsymbol.woff2') format('woff2'),
+                url('../dist/saudiriyalsymbol.woff') format('woff'),
+                url('../dist/saudiriyalsymbol.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* ── Helper class ── */
+        .sar {
+            font-family: 'SaudiRiyal', sans-serif;
+            font-weight: bold;
+        }
+
+        /* ── Page styles ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #f5f5f5;
+            color: #1a1a1a;
+            padding: 40px 20px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        h1 .sar {
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* ── Sections ── */
+        section {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        section h2 {
+            font-size: 16px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        /* ── Price list ── */
+        .price-list {
+            list-style: none;
+        }
+
+        .price-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 18px;
+        }
+
+        .price-list li:last-child {
+            border-bottom: none;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #006c35;
+        }
+
+        /* ── Size demo ── */
+        .sizes {
+            display: flex;
+            align-items: baseline;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .sizes span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .sizes small {
+            font-size: 11px;
+            color: #999;
+        }
+
+        /* ── Color demo ── */
+        .colors {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .color-chip {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+
+        /* ── Inline demo ── */
+        .inline-demo p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* ── Code block ── */
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            white-space: pre;
+            line-height: 1.6;
+        }
+
+        .code-block .tag {
+            color: #569cd6;
+        }
+
+        .code-block .attr {
+            color: #9cdcfe;
+        }
+
+        .code-block .str {
+            color: #ce9178;
+        }
+
+        .code-block .cmt {
+            color: #6a9955;
+        }
+
+        .code-block .prop {
+            color: #9cdcfe;
+        }
+
+        .code-block .val {
+            color: #ce9178;
+        }
+
+        /* ── RTL demo ── */
+        .rtl-demo {
+            direction: rtl;
+            text-align: right;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            color: #aaa;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><span class="sar">&#xea;</span> Saudi Riyal Symbol</h1>
+    <p class="subtitle">Simple usage examples — zero dependencies, just HTML + CSS.</p>
+
+
+    <!-- 1. Inline with text -->
+    <section>
+        <h2>Inline with Text</h2>
+        <div class="inline-demo">
+            <p>Total: <span class="sar">&#xea;</span> 249.99</p>
+            <p>Discount: −<span class="sar">&#xea;</span> 50.00</p>
+            <p>You pay: <span class="sar">&#xea;</span> 199.99</p>
+        </div>
+    </section>
+
+
+    <!-- 2. Price list -->
+    <section>
+        <h2>Price List</h2>
+        <ul class="price-list">
+            <li>
+                <span>Coffee</span>
+                <span class="price"><span class="sar">&#xea;</span> 18</span>
+            </li>
+            <li>
+                <span>Shawarma</span>
+                <span class="price"><span class="sar">&#xea;</span> 12</span>
+            </li>
+            <li>
+                <span>Kabsa (Family)</span>
+                <span class="price"><span class="sar">&#xea;</span> 85</span>
+            </li>
+            <li>
+                <span>iPhone 16 Pro</span>
+                <span class="price"><span class="sar">&#xea;</span> 4,999</span>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- 3. Different sizes -->
+    <section>
+        <h2>Scalable Sizes</h2>
+        <div class="sizes">
+            <span><span class="sar" style="font-size:14px">&#xea;</span> <small>14px</small></span>
+            <span><span class="sar" style="font-size:20px">&#xea;</span> <small>20px</small></span>
+            <span><span class="sar" style="font-size:32px">&#xea;</span> <small>32px</small></span>
+            <span><span class="sar" style="font-size:48px">&#xea;</span> <small>48px</small></span>
+            <span><span class="sar" style="font-size:64px">&#xea;</span> <small>64px</small></span>
+            <span><span class="sar" style="font-size:96px">&#xea;</span> <small>96px</small></span>
+        </div>
+    </section>
+
+
+    <!-- 4. Color variations -->
+    <section>
+        <h2>Color Variations</h2>
+        <div class="colors">
+            <div class="color-chip" style="background:#1a1a1a; color:#fff"><span class="sar">&#xea;</span></div>
+            <div class="color-chip" style="background:#006c35; color:#fff"><span class="sar">&#xea;</span></div>
+            <div class="color-chip" style="background:#f0f0f0; color:#1a1a1a"><span class="sar">&#xea;</span></div>
+            <div class="color-chip" style="background:#0057b7; color:#fff"><span class="sar">&#xea;</span></div>
+            <div class="color-chip" style="background:#c8a951; color:#fff"><span class="sar">&#xea;</span></div>
+        </div>
+    </section>
+
+
+    <!-- 5. RTL (Arabic) -->
+    <section>
+        <h2>RTL / Arabic</h2>
+        <div class="rtl-demo">
+            <p>السعر: <span class="sar">&#xea;</span> ١٩٩٫٩٩</p>
+            <p>الخصم: <span class="sar">&#xea;</span> ٥٠٫٠٠</p>
+        </div>
+    </section>
+
+
+    <!-- 6. Copy-paste code -->
+    <section>
+        <h2>Quick Start Code</h2>
+        <div class="code-block"><span class="cmt">&lt;!-- 1. Load the font --&gt;</span>
+            <span class="tag">&lt;style&gt;</span>
+            <span class="tag">@font-face</span> {
+            <span class="prop">font-family</span>: <span class="val">'SaudiRiyal'</span>;
+            <span class="prop">src</span>: <span class="val">url('saudiriyalsymbol.woff2')</span> <span
+                class="val">format('woff2')</span>;
+            }
+            <span class="tag">.sar</span> {
+            <span class="prop">font-family</span>: <span class="val">'SaudiRiyal'</span>, <span
+                class="val">sans-serif</span>;
+            }
+            <span class="tag">&lt;/style&gt;</span>
+
+            <span class="cmt">&lt;!-- 2. Use it --&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="str">"sar"</span><span
+                class="tag">&gt;</span>&amp;#xea;<span class="tag">&lt;/span&gt;</span> 199.99
+        </div>
+    </section>
+
+
+    <footer>
+        Symbol by <a href="https://github.com/abdulrysr" target="_blank">@abdulrysr</a> ·
+        Unicode: U+00EA · Entity: &amp;#xea;
+    </footer>
+
+</body>
+
+</html>
